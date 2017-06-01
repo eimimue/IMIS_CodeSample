@@ -1,0 +1,307 @@
+// MDL v1 utf8
+network  {
+  watchlist = ""
+}
+module ImageStatistics {
+  internal  {
+    frame = "605 69 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "489 144 460 654"
+        sizeHint = "460 654"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageStatistics
+    innerMin = 0
+    innerMax = 1
+    autoUpdate = FALSE
+    perSlice = FALSE
+    currentSlice = 0
+    lowerWidth = 0
+    upperWidth = 0
+    useMask = FALSE
+  }
+}
+module itkImageFileReader {
+  internal  {
+    frame = "493 421 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "876 363 315 442"
+        sizeHint = "270 442"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = Feature1
+    fileDataType = float
+    correctSubVoxelShift = FALSE
+    fileDimension = 3
+    info = "Loading okay."
+    numDims = 3
+    fileType = TypeNotApplicable
+    componentType = float
+    pixelType = SCALAR
+    loaderType = NiftiImageIO
+    outputMetaDataStr = "ITK_FileNotes :
+ITK_InputFilterName : NiftiImageIO
+aux_file :
+bitpix : 32
+cal_max : 0
+cal_min : 0
+datatype : 16
+descrip :
+dim[0] : 3
+dim[1] : 91
+dim[2] : 109
+dim[3] : 65
+dim[4] : 1
+dim[5] : 1
+dim[6] : 1
+dim[7] : 1
+dim_info :
+intent_code : 0
+intent_name :
+intent_p1 : 0
+intent_p2 : 0
+intent_p3 : 0
+pixdim[0] : -1
+pixdim[1] : 2
+pixdim[2] : 2
+pixdim[3] : 2
+pixdim[4] : 0
+pixdim[5] : 0
+pixdim[6] : 0
+pixdim[7] : 0
+qform_code : 2
+qoffset_x : -0
+qoffset_y : -0
+qoffset_z : 0
+quatern_b : -0
+quatern_c : 1
+quatern_d : 0
+scl_inter : 0
+scl_slope : 1
+sform_code : 1
+slice_code :
+slice_duration : 0
+slice_end : 0
+slice_start : 0
+srow_x : -2 -0 0 -0
+srow_y : -0 2 -0 -0
+srow_z : 0 0 2 0
+toffset : 0
+vox_offset : 352
+xyzt_units : 
+"
+    unresolvedFileName = $(HOME)/Development/icnsRandomForestGump/testdata/009_aff_feature1.nii.gz
+  }
+}
+module MinMaxScan {
+  internal  {
+    frame = "497 309 112 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = MinMaxScan1
+    updateMode = AutoUpdate
+    typeSelect = "Proposed Data Type"
+    preferUnsigned = TRUE
+  }
+}
+module OrthoView2D {
+  internal  {
+    frame = "525 181 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "842 223 400 430"
+        sizeHint = "400 430"
+        wasOpen = yes
+      }
+      window _automatic {
+        geometry = "469 171 500 600"
+        sizeHint = "262 217"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = OrthoView2D1
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    synchronizePosition = TRUE
+    layout = LAYOUT_CUBE_EQUAL
+    filterMode = FILTER_LINEAR
+    synchronizeZoom = TRUE
+    synchronizePanning = FALSE
+    useGlobalInputImage = TRUE
+    snapToCenter = FALSE
+    alternCubeLayout = FALSE
+    timePoint = 0
+    useManagedInteraction = FALSE
+    enableSlicing = TRUE
+    borderOn = TRUE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    grayWidth = 6.5469232
+    grayCenter = 2.1188841
+    annotationOn = TRUE
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationFontSize = ANNO_SIZE_AUTO
+    valueHighPrecision = TRUE
+    annoCoords = Voxel
+    showCurrentPos = TRUE
+    worldPosition = "58.9489822387695 -95.6530609130859 1"
+    coloredMode = FALSE
+  }
+}
+module OrthoView2D {
+  internal  {
+    frame = "317 181 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _automatic {
+        geometry = "7 152 500 600"
+        sizeHint = "262 217"
+        wasOpen = no
+      }
+      window _default {
+        geometry = "128 230 400 430"
+        sizeHint = "400 430"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = OrthoView2D
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    synchronizePosition = TRUE
+    layout = LAYOUT_CUBE_EQUAL
+    filterMode = FILTER_LINEAR
+    synchronizeZoom = TRUE
+    synchronizePanning = FALSE
+    useGlobalInputImage = TRUE
+    snapToCenter = FALSE
+    alternCubeLayout = FALSE
+    timePoint = 0
+    useManagedInteraction = FALSE
+    enableSlicing = TRUE
+    borderOn = TRUE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    grayWidth = 795
+    grayCenter = 397.5
+    annotationOn = TRUE
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationFontSize = ANNO_SIZE_AUTO
+    valueHighPrecision = TRUE
+    annoCoords = Voxel
+    showCurrentPos = TRUE
+    worldPosition = "58.9489822387695 -95.6530609130859 1"
+    coloredMode = FALSE
+  }
+}
+module MinMaxScan {
+  internal  {
+    frame = "293 309 104 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = MinMaxScan
+    updateMode = AutoUpdate
+    typeSelect = "Proposed Data Type"
+    preferUnsigned = TRUE
+  }
+}
+module itkImageFileReader {
+  internal  {
+    frame = "289 421 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "584 250 315 442"
+        sizeHint = "270 442"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = OriginalData
+    fileDataType = int16
+    correctSubVoxelShift = FALSE
+    fileDimension = 3
+    info = "Loading okay."
+    numDims = 3
+    fileType = TypeNotApplicable
+    componentType = float
+    pixelType = SCALAR
+    loaderType = NiftiImageIO
+    outputMetaDataStr = "ITK_FileNotes :
+ITK_InputFilterName : NiftiImageIO
+aux_file :
+bitpix : 32
+cal_max : 0
+cal_min : 0
+datatype : 16
+descrip :
+dim[0] : 3
+dim[1] : 91
+dim[2] : 109
+dim[3] : 65
+dim[4] : 1
+dim[5] : 1
+dim[6] : 1
+dim[7] : 1
+dim_info :
+intent_code : 0
+intent_name :
+intent_p1 : 0
+intent_p2 : 0
+intent_p3 : 0
+pixdim[0] : -1
+pixdim[1] : 2
+pixdim[2] : 2
+pixdim[3] : 2
+pixdim[4] : 0
+pixdim[5] : 0
+pixdim[6] : 0
+pixdim[7] : 0
+qform_code : 2
+qoffset_x : -0
+qoffset_y : -0
+qoffset_z : 0
+quatern_b : -0
+quatern_c : 1
+quatern_d : 0
+scl_inter : 0
+scl_slope : 1
+sform_code : 1
+slice_code :
+slice_duration : 0
+slice_end : 0
+slice_start : 0
+srow_x : -2 -0 0 -0
+srow_y : -0 2 -0 -0
+srow_z : 0 0 2 0
+toffset : 0
+vox_offset : 352
+xyzt_units : 
+"
+    unresolvedFileName = $(HOME)/Development/icnsRandomForestGump/testdata/009_aff.nii.gz
+  }
+}
+connections  {
+  ImageStatistics.input0 = MinMaxScan1.output0
+  MinMaxScan1.input0 = Feature1.output0
+  OrthoView2D1.image = MinMaxScan1.output0
+  OrthoView2D1.worldPosition = OrthoView2D.worldPosition
+  OrthoView2D.image = MinMaxScan.output0
+  MinMaxScan.input0 = OriginalData.output0
+}
+networkModel = ""
